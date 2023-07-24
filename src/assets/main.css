@@ -19,10 +19,10 @@ body {
 .wrapper,
 main {
   display: flex;
-  padding: 0rem 6rem 6rem 6rem;
+  padding: 0rem 1rem 1rem 1rem;
+  gap: 1rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2rem;
   align-self: stretch;
 }
 
@@ -74,4 +74,135 @@ tt {
   color: gray;
 }
 
-@media (min-width: 1024px) {}
+nav {
+  position: relative;
+  display: flex;
+  padding: 1rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  font-size: 14px;
+  background-color: #1E1E1E;
+}
+
+.logo {
+  font-size: 18px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.nav-selected {
+  background: #F0F0F0;
+  color: #1E1E1E;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  background-color: #404040;
+  justify-content: space-between;
+  align-items: baseline;
+  align-self: stretch;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+}
+
+.footer-left {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: baseline;
+}
+
+@media (min-width: 400px) {
+  nav {
+    padding: 2rem 2rem;
+  }
+
+  .wrapper,
+  main {
+    padding: 0rem 2rem 2rem 2rem;
+    gap: 1rem;
+  }
+
+  footer {
+    padding: 1rem 2rem;
+  }
+
+  .footer-left {
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 500px) {
+  nav {
+    padding: 2rem 3rem;
+  }
+
+  .wrapper,
+  main {
+    padding: 0rem 3rem 3rem 3rem;
+    gap: 1rem;
+  }
+
+  footer {
+    padding: 1.5rem 3rem;
+    flex-direction: row;
+  }
+
+  .footer-left {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 750px) {
+  nav {
+    padding: 2rem 4rem;
+  }
+
+  .wrapper,
+  main {
+    padding: 0rem 4rem 4rem 4rem;
+    gap: 1.5rem;
+  }
+
+  footer {
+    padding: 2rem 4rem;
+  }
+
+  .footer-left {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  nav {
+    padding: 2rem 6rem;
+  }
+
+  .wrapper,
+  main {
+    padding: 0rem 6rem 6rem 6rem;
+    gap: 2rem;
+  }
+
+  footer {
+    padding: 2rem 6rem;
+  }
+
+  .footer-left {
+    gap: 2rem;
+  }
+}
