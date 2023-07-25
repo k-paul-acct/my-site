@@ -107,7 +107,7 @@ public class BloomFilter
           </div>
           <div class="contact-entry">
             <img src="/GitHub_logo.svg" alt="" />
-            <div><a href="https://github.com/k-paul-acct" target="_blank">k-pavel-acct</a></div>
+            <div><a href="https://github.com/k-paul-acct" target="_blank">k-paul-acct</a></div>
           </div>
           <div class="contact-entry">
             <img src="/LinkedIn_logo.svg" alt="" />
