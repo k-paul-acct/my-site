@@ -106,11 +106,11 @@ public class BloomFilter
             <div><a href="mailto:k.paul.acc@yandex.ru" target="_blank">k.paul.acc@yandex.ru</a></div>
           </div>
           <div class="contact-entry">
-            <img src="../public/GitHub_logo.svg" alt="" />
+            <img src="/GitHub_logo.svg" alt="" />
             <div><a href="https://github.com/k-paul-acct" target="_blank">k-pavel-acct</a></div>
           </div>
           <div class="contact-entry">
-            <img src="../public/LinkedIn_logo.svg" alt="" />
+            <img src="/LinkedIn_logo.svg" alt="" />
             <div><a href="https://www.linkedin.com/in/k-pavel" target="_blank">k-pavel</a></div>
           </div>
         </div>
