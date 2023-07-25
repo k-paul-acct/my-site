@@ -150,7 +150,7 @@ public class BloomFilter
   z-index: -20;
   position: absolute;
   left: 0;
-  opacity: 10%;
+  opacity: 13%;
   font-size: 18px;
 }
 
