@@ -1,40 +1,27 @@
 # my-site
 
-This template should help get you started developing with Vue 3 in Vite.
+A portfolio built with Vue, TypeScript, and Vite.
 
-## Recommended IDE Setup
+## Development
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+Install [Bun](https://bun.sh/docs/installation).
 
 ```sh
-npm install
+bun install --frozen-lockfile
+bun run dev
 ```
 
-### Compile and Hot-Reload for Development
+Use `bun run type-check` to check the Vue app and Vite config without bundling.
+
+## Environment
+
+The site needs no environment variables. Vite handles `.env` loading, including `.env.local` and mode-specific overrides. Bun's automatic `.env` loading is disabled in `bunfig.toml` to preserve Vite's precedence. If you add public build-time settings, prefix them with `VITE_` and document them in a committed `.env.example`. Anything exposed through `VITE_` is public.
+
+## Build and deployment
 
 ```sh
-npm run dev
+bun run build
+bun run preview
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+The build type-checks the project and writes the production site to `dist/`.

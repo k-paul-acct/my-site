@@ -1,17 +1,15 @@
-import './assets/main.css'
+import { createApp } from "vue";
+import highlightPlugin from "@highlightjs/vue-plugin";
+import hljs from "highlight.js/lib/core";
+import csharp from "highlight.js/lib/languages/csharp";
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import "@fontsource/fira-mono/latin-400.css";
+import "@fontsource/playfair-display/latin-400.css";
+import "@fontsource/playfair-display/latin-400-italic.css";
+import "highlight.js/styles/base16/onedark.css";
+import "./assets/main.css";
+import App from "./App.vue";
 
-import 'highlight.js/styles/base16/onedark.css'
-import hljs from 'highlight.js/lib/core'
-import csharp from 'highlight.js/lib/languages/csharp'
-import hljsVuePlugin from "@highlightjs/vue-plugin"
+hljs.registerLanguage("csharp", csharp);
 
-hljs.registerLanguage('csharp', csharp);
-
-let app = createApp(App)
-
-app.use(hljsVuePlugin)
-
-app.mount('#app')
+createApp(App).use(highlightPlugin).mount("#app");
