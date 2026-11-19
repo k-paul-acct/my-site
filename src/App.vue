@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import githubIcon from './assets/github.svg'
-import linkedinIcon from './assets/linkedin.svg'
+
 import CodeBackdrop from './components/CodeBackdrop.vue'
 
 const year = new Date().getFullYear()
@@ -46,10 +46,6 @@ const year = new Date().getFullYear()
           <li class="contact-entry">
             <img :src="githubIcon" width="32" height="32" alt="" />
             <a href="https://github.com/k-paul-acct" aria-label="k-paul-acct on GitHub">k-paul-acct</a>
-          </li>
-          <li class="contact-entry">
-            <img :src="linkedinIcon" width="32" height="32" alt="" />
-            <a href="https://www.linkedin.com/in/k-pavel" aria-label="k-pavel on LinkedIn">k-pavel</a>
           </li>
         </ul>
       </section>
