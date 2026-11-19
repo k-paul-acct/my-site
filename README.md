@@ -25,3 +25,11 @@ bun run preview
 ```
 
 The build type-checks the project and writes the production site to `dist/`.
+
+To build with Docker and export the site directly to `dist/` on your host, run this from the project root:
+
+```sh
+docker buildx build --target dist --output type=local,dest=./dist .
+```
+
+Use an empty output directory for a clean export: Docker overwrites matching files but does not remove stale ones.
